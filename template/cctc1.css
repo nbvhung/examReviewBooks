@@ -44,7 +44,7 @@
     padding: 0 5px;
 
     /* Thêm khoảng cách dưới vì đã xóa đường kẻ */
-    margin-bottom: 15px; 
+    /* margin-bottom: 15px;  */
 }
 
 /* --- CẤP 2: HĐQT & BAN KIỂM SOÁT --- */
@@ -55,16 +55,16 @@
     align-items: center;
     width: 100%;
 }
-
+.org-level-split .org-box:last-child {
+    margin-bottom: 31px;
+}
 /* Nhánh Ban Kiểm Soát */
 .org-side-branch {
-    position: absolute;
-    top: 0; 
-    left: 50%; 
-    /* Đẩy sang phải 120px để tách khỏi trục giữa */
-    margin-left: 120px; 
+   position: static;       /* Bỏ vị trí tuyệt đối để về lại dòng chảy bình thường */
+    margin: 0;              /* Bỏ căn lề lệch */
     display: flex;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 /* --- CẤP 3: WRAPPER CÁC KHỐI --- */
