@@ -1102,7 +1102,7 @@
     margin: 0;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center; /* Căn giữa các card */
+    justify-content: center; 
     gap: 80px;
 }
 
@@ -1174,9 +1174,9 @@
 .news-card__content {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Tự co giãn lấp đầy phần thừa */
+    flex-grow: 1;
     background: #FFF;
-    padding: 0 22px 28px 22px; /* Dùng padding thay cho margin trên từng item */
+    padding: 0 22px 28px 22px; 
 }
 
 .news-card__title {
@@ -1185,7 +1185,7 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.3; /* Dùng line-height tương đối */
+    line-height: 1.3; 
     margin-top: 26px;
 }
 
@@ -1206,9 +1206,9 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.4; /* Dùng line-height tương đối */
+    line-height: 1.4;
     margin-top: 27px;
-    flex-grow: 1; /* Đẩy nút "Xem thêm" xuống dưới */
+    flex-grow: 1; 
 }
 
 .about__cta2 {
@@ -1293,15 +1293,15 @@
 @media (max-width: 768px) {
     .news-slider-wrapper {
         position: relative;
-        overflow: hidden; /* Che phần bị tràn ra ngoài */
+        overflow: hidden; 
         width: 100%;
     }
 
     .news-section__list {
         display: flex;
-        flex-wrap: nowrap; /* Không được xuống dòng */
+        flex-wrap: nowrap; 
         width: 100%;
-        transition: transform 0.4s ease-in-out; /* Hiệu ứng trượt mượt */
+        transition: transform 0.4s ease-in-out; 
     }
 
     .news-section__item {
@@ -1412,7 +1412,6 @@
 }
 
 
-/* === CỘT PHẢI (FORM MÀU XANH) === */
 .registration-form-wrapper {
     border-radius: 20px;
     background: #00AA4F;
@@ -1434,7 +1433,6 @@
     margin-bottom: 20px;
 }
 
-/* === STYLE CHUNG CHO INPUT, SELECT, TEXTAREA === */
 .registration-form input[type="text"],
 .registration-form input[type="tel"],
 .registration-form input[type="email"],

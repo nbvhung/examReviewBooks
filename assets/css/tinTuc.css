@@ -1,6 +1,5 @@
 .page-header-container {
     width: 100%;
-    margin-top: 20px;
     overflow-x: hidden;
 }
 
@@ -74,7 +73,7 @@
     font-style: italic;
     font-weight: 300;
     line-height: normal;
-    margin-top: -10px; /* Đã sửa từ padding-top (sai) thành margin-top */
+    margin-top: -10px; 
 }
 
 .news-section__list {
@@ -97,11 +96,10 @@
     max-width: 325px; 
 }
 
-/* === PHẦN HÌNH ẢNH === */
 .news-section {
     position: relative;
     z-index: 2;
-    width: 100%; /* Đã sửa từ 980px thành 100% để không bị vỡ khung */
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -173,7 +171,6 @@
     line-height: normal;
 }
 
-/* === PHẦN NỘI DUNG (CHỮ) === */
 .news-card__content {
     display: flex;
     justify-content: center;
@@ -309,7 +306,6 @@
     height: auto;
 }
 
-/* === Widget Tin tức - Sự kiện (Dạng danh sách) === */
 .sidebar-snippet {
     display: flex;
     gap: 15px;
@@ -377,47 +373,43 @@
 
 @media (max-width: 992px) {
     .main-layout {
-        flex-direction: column; /* Sidebar rớt xuống dưới nội dung chính */
+        flex-direction: column; 
         gap: 40px;
     }
 
     .sidebar {
-        width: 100%; /* Sidebar chiếm full màn hình */
+        width: 100%; 
     }
     
-    /* Tùy chọn: Nếu muốn Sidebar widget chia 2 cột trên tablet */
     .sidebar-widget-container {
         display: flex;
         gap: 20px;
     }
     
     .news-section__list {
-        flex-wrap: wrap; /* Cho phép tin tức xuống dòng */
+        flex-wrap: wrap; 
     }
     
     .news-card {
-        max-width: 100%; /* Card tin tức dãn ra */
+        max-width: 100%; 
     }
     
-    /* Reset lại cái lá để ko bị vỡ layout */
     .leaf-background-box {
-        height: auto; /* Bỏ height cứng */
-        margin-top: -100px; /* Chỉnh lại vị trí */
+        height: auto; 
+        margin-top: -100px; 
         width: 100%;
     }
 }
 
-/* Mobile (Dưới 768px) */
 @media (max-width: 768px) {
     .main-layout {
         margin-top: 20px;
         padding: 0 10px;
     }
 
-    /* 1. Xử lý tin tức: Xếp chồng dọc */
     .news-section__list {
         display: flex;
-        flex-direction: column; /* Xếp dọc */
+        flex-direction: column; 
         gap: 20px;
     }
 
@@ -430,15 +422,13 @@
         max-width: 100%;
     }
 
-    /* 2. Xử lý cái lá (Quan trọng) */
     .leaf-background-box {
-        height: auto; /* Bắt buộc auto để ko thành hình chữ nhật đứng */
+        height: auto; 
         width: 100%;
-        margin-top: -50px; /* Đẩy lên ít hơn */
+        margin-top: -50px; 
         margin-bottom: 20px;
     }
 
-    /* 3. Breadcrumbs nhỏ lại */
     .breadcrumbs {
         padding: 10px;
     }
@@ -448,7 +438,7 @@
     }
     
     .sidebar-snippet {
-        flex-direction: row; /* Giữ nguyên nằm ngang */
+        flex-direction: row; 
         align-items: flex-start;
     }
     
